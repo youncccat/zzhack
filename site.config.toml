@@ -1,0 +1,44 @@
+[root]
+posts_folder_name = "posts"
+
+# The default language of the site
+# en | zh
+language = "en" 
+
+# dynamic_pages_folder_name is really useful in most cases,
+# you can put markdown files under the root/dynamic_pages_folder_name folder,
+# if zzhack found markdown file in root/dynamic_pages_folder_name,
+# these files will be rendered as html pages, that allows users can visit these pages
+# through path of these markdown files, for instance:
+# 
+# dynamic_pages/
+#   |- about/
+#       |- me.md
+#
+# then you can visit the about page through /pages/about/me
+dynamic_pages_folder_name = "dynamic_pages"
+
+[[nav]]
+text = "Home"
+url = "/"
+
+[[nav]]
+text = "Posts"
+url = "/posts"
+
+[[nav]]
+text = "About me"
+url = "/pages/about/me"
+
+[server]
+dev_port = 8000
+prod_port = 8080
+
+# If you want to use different client to create/update post,
+# you need to set password and secret_key to create access_token
+# Otherwise you don't need to modify this section
+[api]
+password = ""
+
+# The secret_key used for encoding and decoding the JWT tokens
+secret_key = ""

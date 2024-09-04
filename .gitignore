@@ -1,12 +1,14 @@
-**/*.rs.bk
-.vercel
+# Build
+**/target
+**/dist
+database.json
+output.css
 
-# Dependencies
-pkg
-/target
+# Deps
+node_modules
 
-# Dist
-dist
+# Database
+zzhack.db
 
 # Platform
 .DS_Store
